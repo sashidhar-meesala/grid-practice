@@ -7,13 +7,26 @@ body {
   background-color: lightgreen;
   min-height: 100vh;
   display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 2fr 3fr 2fr 2fr 3fr 2fr 2fr;
 }
-.one { background-color: yellowgreen; }
-.two { background-color: yellow; }
-.three { background-color: gold; }
-.four { background-color: goldenrod; }
-.five { background-color: orange }
-.six { background-color: tomato}
-.seven { background-color: orangered; }
-.eight { background-color: red; }
-.nine { background-color: crimson; }
+.one { background-color: yellowgreen; grid-column: 1/4;
+  /*align-self: center;*/
+}
+
+.two { background-color: yellow; grid-row: 2/4
+
+}
+.three { background-color: gold; grid-column: 2/4;
+}
+.four { background-color: goldenrod; grid-row:3/5 }
+.five { background-color: orange; grid-row:3/5;}
+.six { background-color: tomato; grid-row:4/6;}
+.seven { background-color: orangered; grid-column: 2/4;}
+.eight { background-color: red; 
+  
+  
+}
+.nine { background-color: crimson; grid-column: 2/4;
+
+}
